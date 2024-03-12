@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoWeb", "CatalogoWeb\CatalogoWeb.csproj", "{C0F050B7-2BF5-4437-8B39-2A69AED1EE3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{53518756-7BC7-48F2-987E-B7A53B4008C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{06D8553C-76FB-4BFB-BF00-392CE4F0F263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0F050B7-2BF5-4437-8B39-2A69AED1EE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F050B7-2BF5-4437-8B39-2A69AED1EE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F050B7-2BF5-4437-8B39-2A69AED1EE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F050B7-2BF5-4437-8B39-2A69AED1EE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53518756-7BC7-48F2-987E-B7A53B4008C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53518756-7BC7-48F2-987E-B7A53B4008C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53518756-7BC7-48F2-987E-B7A53B4008C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53518756-7BC7-48F2-987E-B7A53B4008C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D8553C-76FB-4BFB-BF00-392CE4F0F263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D8553C-76FB-4BFB-BF00-392CE4F0F263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D8553C-76FB-4BFB-BF00-392CE4F0F263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D8553C-76FB-4BFB-BF00-392CE4F0F263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B5443C6-FE77-4B4E-9F70-6901C2152012}
+	EndGlobalSection
+EndGlobal
