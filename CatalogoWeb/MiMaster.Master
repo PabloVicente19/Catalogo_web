@@ -10,11 +10,30 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <nav>
+        <div>
+            <h3>Logo</h3>
+        </div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Mi perfil</a></li>
+            <li><a href="#">Lista de Favoritos</a></li>
+        </ul>
+        <div>
+            <a href="Registrarse"</a>
+            <a href="Iniciar sesion"</a>
+            <img src="#" alt="Imagen de perfil" />
+        </div>
+    </nav>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <footer>
+        <p> &copy Creado por <a href="#">Pablo Vicente</a></p>
+    </footer>
 </body>
 </html>
