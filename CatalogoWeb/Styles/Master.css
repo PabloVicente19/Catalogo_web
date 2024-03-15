@@ -1,0 +1,21 @@
+﻿*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    text-decoration:none;
+}
+.content{
+    margin: 2rem;
+}
+.navbar{
+    height: 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar-list{
+    display:flex;
+    gap: 2rem;
+    list-style:none;
+}

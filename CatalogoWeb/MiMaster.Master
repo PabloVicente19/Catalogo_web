@@ -8,22 +8,23 @@
     <title>Catálogo Web</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="Styles/Master.css" rel="stylesheet" />
 </head>
-<body>
-    <nav>
+<body class="content">
+    <nav class="navbar">
         <div>
             <h3>Logo</h3>
         </div>
-        <ul>
+        <ul class="navbar-list">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Mi perfil</a></li>
             <li><a href="#">Lista de Favoritos</a></li>
         </ul>
-        <div>
-            <a href="Registrarse"</a>
-            <a href="Iniciar sesion"</a>
-            <img src="#" alt="Imagen de perfil" />
+        <div class="navbar-login">
+            <a href="#">Registrarse</a>
+            <a href="#">Iniciar Sesion</a>
+            <img src="#" alt="" />
         </div>
     </nav>
     <form id="form1" runat="server">

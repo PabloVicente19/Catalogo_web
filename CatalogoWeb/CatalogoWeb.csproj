@@ -72,6 +72,7 @@
     <Content Include="ListadoDeProductos.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="Styles\Master.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
