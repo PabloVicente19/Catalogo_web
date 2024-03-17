@@ -12,8 +12,8 @@
 </head>
 <body class="content">
     <nav class="navbar">
-        <div>
-            <h3>Logo</h3>
+        <div class="navbar-logo-container">
+            <img class="navbar-logo" src="Images/Logo/logo.jpg" alt="Logo" />
         </div>
         <ul class="navbar-list">
             <li><a href="#">Inicio</a></li>
@@ -22,9 +22,9 @@
             <li><a href="#">Lista de Favoritos</a></li>
         </ul>
         <div class="navbar-login">
-            <a href="#">Registrarse</a>
-            <a href="#">Iniciar Sesion</a>
-            <img src="#" alt="" />
+            <a href="#" class="navbar-login-btnRegistro">Registrarse</a>
+            <a href="#" class="navbar-login-iniciarSesion">Iniciar Sesion</a>
+            <img class="navbar-login-img" src="#" alt="" />
         </div>
     </nav>
     <form id="form1" runat="server">

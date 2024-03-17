@@ -6,7 +6,7 @@
     text-decoration:none;
 }
 .content{
-    margin: 2rem;
+    margin: 0 2rem;
 }
 .navbar{
     height: 70px;
@@ -14,8 +14,20 @@
     justify-content:space-between;
     align-items:center;
 }
+.navbar-logo-container{
+    display:flex;
+    height:80%;
+}
+.navbar-logo{
+    border-radius: .5rem;
+    object-fit:cover;
+}
 .navbar-list{
     display:flex;
     gap: 2rem;
     list-style:none;
+}
+.navbar-login{
+    display:flex;
+    gap: 1rem;
 }
