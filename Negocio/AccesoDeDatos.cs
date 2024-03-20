@@ -14,7 +14,7 @@ namespace Negocio
         private SqlDataReader _lector;
         public AccesoDeDatos()
         {
-            _conexion = new SqlConnection("");
+            _conexion = new SqlConnection("SERVER=.\\SQLEXPRESS01; DATABASE=CATALOGO_WEB_DB; INTEGRATED SECURITY=YES");
             _comando = new SqlCommand();
         }
         public SqlDataReader Lector
