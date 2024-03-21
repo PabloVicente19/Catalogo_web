@@ -14,8 +14,8 @@ namespace CatalogoWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             articuloNegocio = new ArticuloNegocio();
-            repeat.DataSource = articuloNegocio.Listar();
-            repeat.DataBind();
+            repeater.DataSource = articuloNegocio.Listar();
+            repeater.DataBind();
         }
     }
 }
