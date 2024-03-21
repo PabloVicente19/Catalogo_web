@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif !important;
 }
 /*Codigo del generador*/
 /*185;21;11*/
@@ -15,5 +15,20 @@
     --greenMedium:#3f6162;
 }
 body {
-    background-color:var(--white);
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+footer{
+    height:50px;
+    background-color:#000;
+    color:var(--white);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+p{
+    margin: 0 auto;
+    font-weight:600;
 }

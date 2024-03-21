@@ -4,7 +4,7 @@
     <link href="Styles/Default.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row ">
+    <div class="row mt-5 mb-5">
         <div class="col">
             <div class="cards-container">
                 <asp:Repeater runat="server" ID="repeater">

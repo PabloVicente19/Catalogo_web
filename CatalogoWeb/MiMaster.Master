@@ -14,13 +14,13 @@
     <%-- Css --%>
     <link href="Styles/Master.css" rel="stylesheet" />
 </head>
-<body>
+<body class="content">
     <nav class="navbar bg-black p-t-2">
         <div class="container-fluid ">
             <a href="#" class="navbar-brand text-white">Logo</a>
             <ul class="navbar-nav flex-row gap-3 ">
                 <li class="nav-item">
-                    <a class="nav-link text-white"href="#">Inicio</a>
+                    <a class="nav-link text-white"href="Default.aspx">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">Productos</a>
@@ -31,7 +31,7 @@
             </ul>
             <div>
                 <a href="#" class="btn btn-primary">Iniciar sesion</a>
-                <a href="#" class="btn btn-outline-info">Registrarse</a>
+                <a href="Registro.aspx" class="btn btn-outline-info">Registrarse</a>
             </div>
         </div>
     </nav>
@@ -39,5 +39,8 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </form>
+    <footer>
+            <p>Creado por &copy Pablo Vicente</p>
+    </footer>
 </body>
 </html>

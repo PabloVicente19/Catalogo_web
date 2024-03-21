@@ -4,8 +4,9 @@
     <link href="Styles/Registro.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row mt-5 register-container ">
-        <div class="col-6 mx-auto">
+    <section class="mb-5 register-container ">
+        <h1 class="pb-5 text-center">Registrate</h1>
+        <section class="col-6 mx-auto border rounded p-4">
             <div class="d-flex gap-4">
                 <div class="mb-3 w-50">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
@@ -29,6 +30,6 @@
                     <asp:Button Text="Crear Cuenta" runat="server" CssClass="btn btn-primary" />
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
 </asp:Content>
