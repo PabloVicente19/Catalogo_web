@@ -13,9 +13,18 @@ namespace CatalogoWeb
         ArticuloNegocio articuloNegocio;
         protected void Page_Load(object sender, EventArgs e)
         {
-            articuloNegocio = new ArticuloNegocio();
-            repeater.DataSource = articuloNegocio.Listar();
-            repeater.DataBind();
+            if (!IsPostBack)
+            {
+                articuloNegocio = new ArticuloNegocio();
+                repeater.DataSource = articuloNegocio.Listar();
+                repeater.DataBind();
+            }
+        }
+
+        protected void btnVerProducto_Click(object sender, EventArgs e)
+        {
+            string idProducto = ((Button)sender).CommandArgument;
+            Response.Redirect("DetalleDeProducto.aspx?id=" + idProducto, false);
         }
     }
 }

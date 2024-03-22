@@ -30,7 +30,7 @@
                 </li>
             </ul>
             <div>
-                <a href="#" class="btn btn-primary">Iniciar sesion</a>
+                <a href="Login.aspx" class="btn btn-primary">Iniciar sesion</a>
                 <a href="Registro.aspx" class="btn btn-outline-info">Registrarse</a>
             </div>
         </div>

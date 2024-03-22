@@ -26,7 +26,7 @@ namespace Negocio
             _comando.CommandType = System.Data.CommandType.Text;
             _comando.CommandText = consulta;
         }
-        public void SetearComando(string parametro, object valor)
+        public void SetearParametro(string parametro, object valor)
         {
             _comando.Parameters.AddWithValue(parametro, valor);
         }

@@ -68,11 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="DetalleDeProducto.aspx" />
     <Content Include="Global.asax" />
     <Content Include="ListadoDeProductos.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Styles\Default.css" />
+    <Content Include="Styles\DetalleDeProducto.css" />
+    <Content Include="Styles\Login.css" />
     <Content Include="Styles\Master.css" />
     <Content Include="Styles\Registro.css" />
     <Content Include="Web.config" />
@@ -84,6 +87,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDeProducto.aspx.cs">
+      <DependentUpon>DetalleDeProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleDeProducto.aspx.designer.cs">
+      <DependentUpon>DetalleDeProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
