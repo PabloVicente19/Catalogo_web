@@ -27,7 +27,7 @@
             </div>
             <div class="col-6 mx-auto">
                 <div class="d-flex justify-content-center">
-                    <asp:Button Text="Crear Cuenta" runat="server" CssClass="btn btn-primary" />
+                    <asp:Button Text="Crear Cuenta" runat="server" CssClass="btn btn-primary" ID="btnRegistrarUsuario" OnClick="btnRegistrarUsuario_Click" />
                 </div>
             </div>
         </section>

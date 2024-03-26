@@ -1,6 +1,14 @@
-﻿.cards-container{
+﻿.filter-container{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:1rem;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.cards-container {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #444444;
 }
