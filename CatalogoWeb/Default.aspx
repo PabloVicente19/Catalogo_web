@@ -9,7 +9,7 @@
             <h2 class="title">Productos</h2>
             <div>
                 <span>Ordernar Por:</span>
-                <asp:DropDownList runat="server" ID="DdlFiltro">
+                <asp:DropDownList runat="server" ID="DdlFiltro" OnSelectedIndexChanged="DdlFiltro_SelectedIndexChanged" AutoPostBack="true">
                     <asp:ListItem Text="Menor Precio" />
                     <asp:ListItem Text="Mayor Precio" />
                 </asp:DropDownList>

@@ -22,50 +22,35 @@ namespace CatalogoWeb
                 repeater.DataBind();
             }
         }
-
         protected void btnVerProducto_Click(object sender, EventArgs e)
         {
             string idProducto = ((Button)sender).CommandArgument;
             Response.Redirect("DetalleDeProducto.aspx?id=" + idProducto, false);
-        }
-        public void FiltrarProducto(string criterio)
-        {
-            switch (criterio)
-            {
-                case "Menor Precio":
-                    AplicarFiltro(criterio);
-                    break;
-                case "Mayor Precio":
-                    AplicarFiltro(criterio);
-                    break;
-                default:
-                    return;
-            }
         }
         public List<Articulo> AplicarFiltro(string criterio)
         {
             articuloNegocio = new ArticuloNegocio();
             List<Articulo> filtrados = articuloNegocio.Listar();
 
-            if(criterio == "Menor Precio")
+            if (criterio == "Menor Precio")
             {
-
-            for (int i = 0; i < filtrados.Count; i++)
-            {
-                for (int j = 1; j < filtrados.Count; j++)
-                {
-                    if (filtrados[i].Precio > filtrados[j].Precio)
-                    {
-                        Articulo temp = filtrados[i];
-                        filtrados[i] = filtrados[j];
-                        filtrados[j] = temp;
-                    }
-                }
+                filtrados.Sort((a, b) => a.Precio.CompareTo(b.Precio));
             }
+            else if (criterio == "Mayor Precio")
+            {
+                filtrados.Sort((a, b) => b.Precio.CompareTo(a.Precio));
             }
             return filtrados;
-
         }
-        
+        protected void DdlFiltro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string criterio = DdlFiltro.SelectedItem.ToString();
+            if (criterio != null)
+            {
+                repeater.DataSource = null;
+                repeater.DataSource = AplicarFiltro(criterio);
+                repeater.DataBind();
+            }
+        }
     }
 }

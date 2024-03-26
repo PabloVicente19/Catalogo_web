@@ -10,20 +10,20 @@
             <div class="d-flex gap-4">
                 <div class="mb-3 w-50">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" />
+                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtNombre" />
                 </div>
                 <div class="mb-3 w-50">
                     <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" />
+                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtApellido" />
                 </div>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <asp:TextBox runat="server" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" CssClass="form-control" TextMode="Email" ID="txtEmail" />
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
-                <asp:TextBox runat="server" CssClass="form-control" TextMode="Password" />
+                <asp:TextBox runat="server" CssClass="form-control" TextMode="Password" ID="txtContraseña" />
             </div>
             <div class="col-6 mx-auto">
                 <div class="d-flex justify-content-center">
