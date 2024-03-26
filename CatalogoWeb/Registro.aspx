@@ -10,7 +10,7 @@
             <div class="d-flex gap-4">
                 <div class="mb-3 w-50">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtNombre" />
+                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtNombre" AutoPostBack="false" OnTextChanged="txtNombre_TextChanged" />
                 </div>
                 <div class="mb-3 w-50">
                     <label for="exampleFormControlInput1" class="form-label">Apellido</label>

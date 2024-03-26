@@ -15,8 +15,26 @@ namespace CatalogoWeb
         public string Contraseña { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            btnRegistrarUsuario.Enabled = false;
         }
+        /*
+        - si los campos estan vacios no se puede agregar.
+        - si algun campo esta incompleto no se puede agregar
+        - si algun campo no cumple con los criteros cambiar la ui para que lo modifique
+        - emplear regex para el email
+        - el nombre no puede contener números 
+        - apellido no puede contener números
+        */
         protected void btnRegistrarUsuario_Click(object sender, EventArgs e)
+        {
+        }
+
+        private string ValidarCampo(string campo)
+        {
+            return campo;
+        }
+
+        protected void txtNombre_TextChanged(object sender, EventArgs e)
         {
 
         }
