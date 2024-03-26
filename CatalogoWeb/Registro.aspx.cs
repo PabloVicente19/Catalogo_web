@@ -16,6 +16,7 @@ namespace CatalogoWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             btnRegistrarUsuario.Enabled = false;
+            
         }
         /*
         - si los campos estan vacios no se puede agregar.
@@ -29,14 +30,19 @@ namespace CatalogoWeb
         {
         }
 
-        private string ValidarCampo(string campo)
+        private string ValidarCampo(TextBox campo)
         {
-            return campo;
+            
+            string valor = string.Empty;
+            if (campo.Text.Length > 2)
+            {
+                valor = campo.Text;
+            }
+            return valor;
         }
-
         protected void txtNombre_TextChanged(object sender, EventArgs e)
         {
-
+            Validacion(txtNombre);
         }
     }
 }
