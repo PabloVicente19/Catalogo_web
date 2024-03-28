@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace CatalogoWeb
@@ -15,8 +16,8 @@ namespace CatalogoWeb
         public string Contraseña { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnRegistrarUsuario.Enabled = false;
-            
+            if (IsPostBack)
+                txtNombre_error.InnerHtml = "";
         }
         /*
         - si los campos estan vacios no se puede agregar.
@@ -28,21 +29,27 @@ namespace CatalogoWeb
         */
         protected void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
-        }
-
-        private string ValidarCampo(TextBox campo)
-        {
-            
-            string valor = string.Empty;
-            if (campo.Text.Length > 2)
+            if (IsPostBack)
             {
-                valor = campo.Text;
+                string nombre = ValidarCampo(txtNombre, "Nombre", txtNombre_error);
+                string apellido = ValidarCampo(txtApellido, "apellido", txtApellido_error);
+                string email = ValidarCampo(txtEmail, "email", txtEmail_error);
+                string contraseña = ValidarCampo(txtContraseña, "Contraseña", txtContraseña_error);
             }
+        }
+        private string ValidarCampo(TextBox campo, string nombreDelCampo, HtmlGenericControl idSmall)
+        {
+            string valor = null;
+
+            if (campo.Text.Trim().Length > 2)
+                valor = campo.Text;
+            else
+                MostrarError(nombreDelCampo, idSmall);
             return valor;
         }
-        protected void txtNombre_TextChanged(object sender, EventArgs e)
+        private void MostrarError(string message, HtmlGenericControl tag)
         {
-            Validacion(txtNombre);
+            tag.InnerHtml = $"¡{message} incorrecto!";
         }
     }
 }

@@ -10,20 +10,27 @@
             <div class="d-flex gap-4">
                 <div class="mb-3 w-50">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtNombre" OnTextChanged="txtNombre_TextChanged" AutoPostBack="true"/>
+                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtNombre" />
+                    <small runat="server" id="txtNombre_error" class="form-error"></small>
                 </div>
                 <div class="mb-3 w-50">
                     <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtApellido" />
+                    <asp:TextBox runat="server" CssClass="form-control" TextMode="SingleLine" ID="txtApellido"  />
+                    <small runat="server" id="txtApellido_error" class="form-error"></small>
+
                 </div>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <asp:TextBox runat="server" CssClass="form-control" TextMode="Email" ID="txtEmail" />
+                    <small runat="server" id="txtEmail_error" class="form-error"></small>
+
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
                 <asp:TextBox runat="server" CssClass="form-control" TextMode="Password" ID="txtContraseña" />
+                    <small runat="server" id="txtContraseña_error" class="form-error"></small>
+
             </div>
             <div class="col-6 mx-auto">
                 <div class="d-flex justify-content-center">
